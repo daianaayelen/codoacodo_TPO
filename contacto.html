@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f16558b854.js" crossorigin="anonymous"></script>
+    <link rel="icon" 
+      type="image/png" 
+      href="img/logo.png" />
+</head>
+<body>
+    <header class="header" id="header"></header>
+
+    <button class="menu-js" aria-label="toggle navigation">
+        Menú
+        <div class="arrow"></div> 
+      </button>
+
+    <nav class="nav-custom close-js"></nav>
+
+    <main>
+        <section class="contacto" id="contacto">
+
+            <div class="consultas">
+                <a href="mailto:"><i class="fas fa-envelope"></i> Mail para consultas</a>
+            </div>
+
+            <form action="show_data.html" class="form">
+
+                <label for="first-name">Nombre(s): </label>
+                <input type="text" name="first-name" id="first-name" class="contact-input" required placeholder="John">
+
+                <label for="last-name">Apellido(s): </label>
+                <input type="text" name="last-name" id="last-name" class="contact-input" required placeholder="Doe">
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" class="contact-input" required placeholder="johndoe@example.com"> 
+                
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="" cols="30" rows="10" class="contact-input"></textarea>
+
+                <input type="submit" class="submit">
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script type="module" src="../javascript/main.js"></script>
+</body>
+</html>
